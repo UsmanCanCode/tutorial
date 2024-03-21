@@ -17,5 +17,9 @@ def about():
 import learn
 app.register_blueprint(learn.bp)
 
+from apis import bp as api_bp
+app.register_blueprint(api_bp, url_prefix='/api')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
