@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block h2 %} About Page {% endblock %}
+
+{% block content %}
+
+<div>
+  <p>
+    I am excited to be a part of Dallas Software Developer Cohort.
+  </p>
+  <p>
+    Learn about <a href="{{url_for('learn.learn', something='flask')}}">Flask</a>
+  </p>
+
+  <p>
+    Learn about <a href="{{url_for('learn.learn', something='nothing')}}">Nothing</a>
+  </p>
+
+
+</div>
+
+{% endblock %}
